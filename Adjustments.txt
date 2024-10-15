@@ -1,0 +1,5 @@
+Will be using CartPole for testing, because Atari Pong is too heavy in M2 Macbook Air, 8GB memory
+
+CartPole do not need CNN for environment interaction, it only need number vectors for Pole angles, location, etc.
+
+So fully connected layer is enough.
