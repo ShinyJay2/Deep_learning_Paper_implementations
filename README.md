@@ -10,3 +10,5 @@ Currently have:
   ResNet : Used CIFAR10 dataset for training (M2 Macbook Air)
 
   Transformer : Reduced architecture / hyperparam for M2 Macbook Air
+
+  Deep Q-Network (DQN) : Used CartPole-v1, with no convolution layers(because of the CarPole state)
