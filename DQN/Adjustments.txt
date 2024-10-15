@@ -3,3 +3,17 @@ Will be using CartPole for testing, because Atari Pong is too heavy in M2 Macboo
 CartPole do not need CNN for environment interaction, it only need number vectors for Pole angles, location, etc.
 
 So fully connected layer is enough.
+
+Visual Summary of Differences
+While textual, here's a tabular comparison highlighting the key distinctions between the Original DQN and your Reduced DQN:
+
+Aspect	Original DQN (Mnih et al., 2015)	Your Reduced DQN (CartPole)
+Input Type	Raw pixel images (84x84x4 grayscale)	Structured state variables (4D)
+Network Type	Convolutional Neural Network (CNN)	Multi-Layer Perceptron (MLP)
+Layer Composition	3 Conv layers + 2 FC layers	2 FC layers
+Number of Layers	5 total layers	3 total layers
+Activation Functions	ReLU	ReLU
+Output Layer Size	High (e.g., 18 actions for Atari)	Low (e.g., 2 actions for CartPole)
+Purpose of Architecture	Extract spatial features from images	Map state variables to Q-values
+Parameter Count	High due to multiple Conv layers	Lower, suitable for simple tasks
+Suitability	Complex, high-dimensional tasks	Simple, low-dimensional tasks
