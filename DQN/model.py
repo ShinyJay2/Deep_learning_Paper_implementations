@@ -26,11 +26,13 @@ class DQN(nn.Module):
         # So we use input_shape[0] to only fetch 4. 
 
         self.fc = nn.Sequential(
-            nn.Linear(input_shape[0], 128),
+            nn.Linear(input_shape[0], 256),
             nn.ReLU(),
-            nn.Linear(128, 128),
+            nn.Linear(256, 256),
             nn.ReLU(),
-            nn.Linear(128, number_of_actions)
+            nn.Linear(256, 256),
+            nn.ReLU(),
+            nn.Linear(256, number_of_actions)
         )
 
     def forward(self, x):
