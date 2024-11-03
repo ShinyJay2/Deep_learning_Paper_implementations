@@ -4,7 +4,7 @@
 
 ---
 
-## What's Inside 🧠
+## What's Inside 
 
 Each model comes with **intensive code annotations** to share insights into the architecture, training tricks, and reasoning behind design choices. Dive in to learn, adapt, and experiment!
 
@@ -29,11 +29,5 @@ Each model comes with **intensive code annotations** to share insights into the 
 - **Variational AutoEncoder (VAE)** 🔍  
   - **Dataset**: MNIST  
   - A compact VAE designed for the MNIST dataset, making it accessible for experimenting with generative modeling techniques.
-
----
-
-## Why This Repo? 🤔
-
-Perfect for those looking to get hands-on with deep learning architectures in PyTorch, especially on resource-constrained machines. Whether you’re exploring new architectures, experimenting with hyperparameters, or diving into reinforcement learning, this repo has you covered.
 
 ---
