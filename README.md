@@ -30,4 +30,14 @@ Each model comes with **intensive code annotations** to share insights into the 
   - **Dataset**: MNIST  
   - A compact VAE designed for the MNIST dataset, making it accessible for experimenting with generative modeling techniques.
 
+- **RepVGG** 🔥  
+  - **Dataset**: CIFAR-100  
+  - A customized RepVGG model adapted specifically for CIFAR-100. We made several architectural adjustments and applied additional training techniques to optimize the model for CIFAR-100:
+    - **Stage Depths**: Reduced the number of blocks per stage to `[1, 2, 4, 6, 1]`, compared to the deeper structure required for larger datasets like ImageNet. This change lowers the model’s parameters and training time, making it more efficient for CIFAR-100.
+    - **Width Multipliers**: Scaled down the width multipliers to `[0.75, 0.75, 0.75, 1]`, which controls the number of channels per stage and reduces the model's size.
+    - **Data Augmentation (AutoAugment)**: Implemented AutoAugment, which applies advanced data augmentation policies during training. This boosts model generalization and accuracy by providing diverse image transformations, which is particularly beneficial for smaller datasets like CIFAR-100.
+    - **Regularization Techniques**: Added label smoothing and mixup, further enhancing generalization and preventing overfitting on CIFAR-100.
+    - **Global Average Pooling and Final Classifier**: Added a global average pooling layer before the final fully connected layer to aggregate features for CIFAR-100’s 100 classes.
+  - **Performance**: This modified RepVGG model achieves approximately **74% accuracy on the CIFAR-100 test set**. The combination of architectural adjustments and enhanced training techniques makes it well-suited for the M2 MacBook Air.
+
 ---
