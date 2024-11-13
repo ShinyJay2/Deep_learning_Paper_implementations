@@ -1,6 +1,6 @@
 # Deep Learning Models in PyTorch 🚀
 
-**In-depth, annotated implementations of popular deep learning models** – tailored for clear understanding and optimized for performance on the M2 MacBook Air.
+**In-depth, annotated implementations of popular deep learning models** – tailored for clear understanding and optimized for performance on the M2 MacBook Air and high-performance desktop setups.
 
 ---
 
@@ -34,4 +34,6 @@ Each model comes with **intensive code annotations** to share insights into the 
   - **Dataset**: CIFAR-100  
   - Adapted for CIFAR-100 with reduced depth, lower width multipliers, and enhanced training techniques like AutoAugment, label smoothing, and mixup, achieving around **74% accuracy**.
 
----
+- **SimCLR** 🔍  
+  - **Dataset**: Tiny ImageNet  
+  - Implements SimCLR’s contrastive learning framework on Tiny ImageNet. This model uses a ResNet backbone with a projection head to learn representations in an unsupervised manner, optimized for a high-performance desktop setup with an RTX 4060 GPU and 64GB of RAM.
