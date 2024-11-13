@@ -10,17 +10,27 @@ Each model comes with **intensive code annotations** to share insights into the 
 
 ### Models Implemented:
 
+#### **Supervised Learning**
+
 - **ResNet** 🖼️  
   - **Dataset**: CIFAR-10  
-  - Leveraging ResNet to tackle image classification, with optimizations for running on the M2 MacBook Air.
+  - Leverages ResNet to tackle image classification, with optimizations for running on the M2 MacBook Air.
 
 - **Transformer** 🔄  
   - **Architecture**: Simplified, with reduced parameters  
   - Designed to fit the M2 MacBook Air’s performance, this reduced Transformer model retains the essence of the architecture without overwhelming your device.
 
+- **RepVGG** 🔥  
+  - **Dataset**: CIFAR-100  
+  - Adapted for CIFAR-100 with reduced depth, lower width multipliers, and enhanced training techniques like AutoAugment, label smoothing, and mixup, achieving around **74% accuracy**.
+
+#### **Reinforcement Learning**
+
 - **Deep Q-Network (DQN)** 🎢  
   - **Environment**: CartPole-v1  
   - Implements DQN for CartPole, avoiding convolutional layers (ideal for CartPole’s simple state space) to keep things lean and efficient.
+
+#### **Unsupervised Learning**
 
 - **AutoEncoder** 🧩  
   - **Dataset**: CIFAR-10  
@@ -30,9 +40,7 @@ Each model comes with **intensive code annotations** to share insights into the 
   - **Dataset**: MNIST  
   - A compact VAE designed for the MNIST dataset, making it accessible for experimenting with generative modeling techniques.
 
-- **RepVGG** 🔥  
-  - **Dataset**: CIFAR-100  
-  - Adapted for CIFAR-100 with reduced depth, lower width multipliers, and enhanced training techniques like AutoAugment, label smoothing, and mixup, achieving around **74% accuracy**.
+#### **Self-Supervised Learning**
 
 - **SimCLR** 🔍  
   - **Dataset**: Tiny ImageNet  
