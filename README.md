@@ -30,6 +30,10 @@ Each model comes with **intensive code annotations** to share insights into the 
   - **Environment**: CartPole-v1  
   - Implements DQN for CartPole, avoiding convolutional layers (ideal for CartPole’s simple state space) to keep things lean and efficient.
 
+- **Proximal Policy Optimization (PPO)** 🎯  
+  - **Environment**: HalfCheetah-v4  
+  - **Description**: Implements PPO for continuous control in the HalfCheetah-v4 environment, leveraging efficient policy optimization techniques to achieve robust performance. Optimized for both the M2 MacBook Air and high-performance desktop setups, ensuring smooth training and evaluation processes.
+
 #### **Unsupervised Learning**
 
 - **AutoEncoder** 🧩  
@@ -45,3 +49,5 @@ Each model comes with **intensive code annotations** to share insights into the 
 - **SimCLR** 🔍  
   - **Dataset**: Tiny ImageNet  
   - Implements SimCLR’s contrastive learning framework on Tiny ImageNet. This model uses a ResNet backbone with a projection head to learn representations in an unsupervised manner, optimized for a high-performance desktop setup with an RTX 4060 GPU and 64GB of RAM.
+
+---
